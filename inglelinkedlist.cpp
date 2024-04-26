@@ -28,7 +28,7 @@ void addNode() {
         }
     }
     Node* previous = START;
-    Node* current = STAR;
+    Node* current = START;
     while ((current != NULL) && (nim >= current->noMhs))
     {
         if (nim == current->noMhs)
