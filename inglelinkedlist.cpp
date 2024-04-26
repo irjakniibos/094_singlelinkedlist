@@ -33,7 +33,7 @@ void addNode() {
     {
         if (nim == current->noMhs)
         {
-            cout << "NIM sudah ada" << endl;
+            cout << "NIM sudah ada " << endl;
             return;
         }
         previous = current;
@@ -41,4 +41,27 @@ void addNode() {
     }
     nodeBaru->next = current;
     previous->next = nodeBaru;
+}
+
+bool serachNode(int nim, Node* current, Node* previous) {
+	previous = START;
+	current = START;
+	while (current != NULL && nim > current->noMhs)
+	{
+		previous = current;
+		current = current->next;
+	}
+
+	if (current = NULL)
+	{
+		return false;
+	}
+	else if (current->noMhs == nim)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
