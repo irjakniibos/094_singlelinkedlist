@@ -156,6 +156,8 @@ int main(){
 				}
 
                 int nim;
+                cout << "Masukan NIM : ";
+                cin >> nim ;
             }
         }
     }
